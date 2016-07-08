@@ -7,6 +7,12 @@ var express = require('express'),
     fs = require('fs'),
     path = require('path'),
     bytes = require('bytes'),
+    //adding mongoDB from guestBook example
+    //mongodb = require('mongodb'),
+    //qs = require('querystring'),
+    //url = require('url'),
+    // end of introducing mongoDB
+
     parseFile = function(file, req) {
       var parsedFile = path.parse(file),
       fullUrl = req.protocol + '://' + req.get('host') + '/uploads/';

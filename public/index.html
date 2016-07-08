@@ -20,6 +20,8 @@
     #uploadedImages img { display: inline-block; margin: 5px; }
   </style>
 <body onload="initPage()">
+
+
   <h1>Multiple File Upload With ExpressJS 3.x using ajax</h1><br />
   <h3>without ajax ( redirecting to a new page )</h3>
   <form action="/uploadFiles", method="post", enctype="multipart/form-data" name="uploadForm">
@@ -27,6 +29,9 @@
     <input type="submit" value="Upload" class="btn btn-info" />
   </form>
   <hr />
+
+
+
   <h3>with ajax</h3>
   <form action="/uploadFiles", method="post", enctype="multipart/form-data" name="ajaxUploadForm">
     <input type="file" multiple="multiple" accept="image/*" name="uploadedImages"/><br/>
@@ -37,5 +42,7 @@
 
 
   <script src="app.js" async="true"></script>
+
+
 </body>
 </html>
